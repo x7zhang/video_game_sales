@@ -1,4 +1,4 @@
-# video_game_sales
+# Video Game Sales
 ![png](https://github.com/x7zhang/video_game_sales/blob/master/graphs/0d7c8c6a3a60f9a29dda44de48c5b34f.jpg?raw=true)
 # Introduction
 ## Why I make this analysis?
