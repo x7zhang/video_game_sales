@@ -805,7 +805,7 @@ plt.legend(handles=[Blue_patch, Red_patch, Yellow_patch], loc='upper right', fon
 
 
 
-![png](output_63_1.png)
+![png](https://github.com/x7zhang/video_game_sales/blob/master/graphs/output_63_1.png?raw=true)
 
 
 It is obvious just by one look that the PS4 global sales exceed those of BOTH the WiiU and XOne combined. This is a very marked deviation from its predecessor's performance in the 7th Gen when the PS3 and XB360 where neck to neck in sales performance over the years. So how can be explain this dominance this time round?
@@ -822,7 +822,7 @@ ax = usercountYear.unstack().plot(kind='bar', stacked=True, grid=False)
 ```
 
 
-![png](output_66_0.png)
+![png](https://github.com/x7zhang/video_game_sales/blob/master/graphs/output_66_0.png?raw=true)
 
 
 The first impression is after PS4 released in 2013, the total count of user increased sharply util 2016. In 2016,  the sum of user count is lower than 2014, although the total number of user count is decreased, the total user for PS4 is almost maintain the same user count level as in 2014. 
@@ -831,18 +831,3 @@ It showns market share for PS4 is increased.
 
 
 
-```python
-globalSales_by_genre = console_8th.groupby('Genre').agg({'Global_Sales':np.sum}).sort_values('Global_Sales')
-plt.subplots(figsize=(11,7))
-ax = sns.barplot(x=globalSales_by_genre.index, y=globalSales_by_genre.Global_Sales)
-
-```
-
-
-![png](output_68_0.png)
-
-
-
-```python
- releaseAction = console_8th.groupby('Year_of_Release').app({})
-```
